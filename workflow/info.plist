@@ -140,23 +140,6 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>51A7E6F9-0064-4ABE-8688-5DCE8175283C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -175,13 +158,6 @@
 			<integer>420</integer>
 			<key>ypos</key>
 			<integer>60</integer>
-		</dict>
-		<key>51A7E6F9-0064-4ABE-8688-5DCE8175283C</key>
-		<dict>
-			<key>xpos</key>
-			<integer>460</integer>
-			<key>ypos</key>
-			<integer>250</integer>
 		</dict>
 		<key>D241B085-6A98-4CBF-9676-FAA91E36F6C6</key>
 		<dict>
