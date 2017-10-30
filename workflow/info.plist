@@ -21,11 +21,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>D241B085-6A98-4CBF-9676-FAA91E36F6C6</key>
+		<key>A3AF93AC-F6CE-4DFC-908E-E9E905064BC0</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>09B97908-9A52-4275-855F-41A8C354E5B8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D241B085-6A98-4CBF-9676-FAA91E36F6C6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A3AF93AC-F6CE-4DFC-908E-E9E905064BC0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -45,6 +58,25 @@
 	<string>awesome lists</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -79,25 +111,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -108,6 +121,8 @@
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>awesome</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -127,7 +142,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string></string>
+				<string>awesome lists to view</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -140,6 +155,30 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>json</key>
+				<string>{
+  "alfredworkflow" : {
+    "arg" : "{query}",
+    "config" : {
+      "title" : "",
+      "runningsubtext" : "",
+      "subtext" : ""
+    },
+    "variables" : {
+    }
+  }
+}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.json</string>
+			<key>uid</key>
+			<string>A3AF93AC-F6CE-4DFC-908E-E9E905064BC0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -148,23 +187,30 @@
 		<key>09B97908-9A52-4275-855F-41A8C354E5B8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>260</integer>
 			<key>ypos</key>
 			<integer>60</integer>
 		</dict>
 		<key>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>420</integer>
+			<integer>430</integer>
 			<key>ypos</key>
 			<integer>60</integer>
+		</dict>
+		<key>A3AF93AC-F6CE-4DFC-908E-E9E905064BC0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>180</integer>
+			<key>ypos</key>
+			<integer>90</integer>
 		</dict>
 		<key>D241B085-6A98-4CBF-9676-FAA91E36F6C6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>10</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>60</integer>
 		</dict>
 	</dict>
 	<key>version</key>
