@@ -4,9 +4,9 @@ import (
 	"log"
 	"os/exec"
 
-	"git.deanishe.net/deanishe/awgo"
-	"git.deanishe.net/deanishe/awgo/update"
-	"github.com/docopt/docopt-go"
+	"github.com/deanishe/awgo"
+	"github.com/nikitavoloboev/markdown-parser/parser"
+	"github.com/tj/docopt"
 )
 
 // Name of the background job that checks for updates
@@ -40,7 +40,8 @@ var (
 )
 
 func init() {
-	wf = aw.New(update.GitHub(repo))
+	// TODO: add update.GitHub(repo) later
+	wf = aw.New()
 }
 
 func run() {
@@ -88,7 +89,17 @@ func run() {
 		}
 	}
 
-	wf.NewItem("this works")
+	// parse URL for links
+	links, err := parser.ParseMarkdownURL("https://raw.githubusercontent.com/sindresorhus/awesome/master/readme.md")
+	if err != nil {
+		log.Println("Error parsing links")
+	}
+
+	// add all links to Alfred
+	for k, v := range links {
+		wf.Args
+		wf.NewItem(k).Arg(v).Valid(true)
+	}
 
 	if query != "" {
 		wf.Filter(query)

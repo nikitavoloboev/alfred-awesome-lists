@@ -8,6 +8,19 @@
 	<string>mine</string>
 	<key>connections</key>
 	<dict>
+		<key>09B97908-9A52-4275-855F-41A8C354E5B8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D241B085-6A98-4CBF-9676-FAA91E36F6C6</key>
 		<array>
 			<dict>
@@ -66,6 +79,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -108,6 +140,23 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>51A7E6F9-0064-4ABE-8688-5DCE8175283C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -119,6 +168,20 @@
 			<integer>240</integer>
 			<key>ypos</key>
 			<integer>60</integer>
+		</dict>
+		<key>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>420</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+		<key>51A7E6F9-0064-4ABE-8688-5DCE8175283C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>460</integer>
+			<key>ypos</key>
+			<integer>250</integer>
 		</dict>
 		<key>D241B085-6A98-4CBF-9676-FAA91E36F6C6</key>
 		<dict>
