@@ -191,6 +191,8 @@
 			<integer>50</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>1.0.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/nikitavoloboev</string>
 </dict>

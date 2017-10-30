@@ -5,6 +5,7 @@ import (
 	"os/exec"
 
 	"github.com/deanishe/awgo"
+	"github.com/deanishe/awgo/update"
 	"github.com/nikitavoloboev/markdown-parser/parser"
 	"github.com/tj/docopt"
 )
@@ -41,11 +42,10 @@ var (
 
 func init() {
 	// TODO: add update.GitHub(repo) later
-	wf = aw.New()
+	wf = aw.New(update.GitHub(repo))
 }
 
 func run() {
-
 	// Pass wf.Args() to docopt because our update logic relies on
 	// AwGo's magic actions.
 	args, _ := docopt.Parse(usage, wf.Args(), true, wf.Version(), false, true)
@@ -97,7 +97,6 @@ func run() {
 
 	// add all links to Alfred
 	for k, v := range links {
-		wf.Args
 		wf.NewItem(k).Arg(v).Valid(true)
 	}
 
