@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B22AABA1-E682-48A2-A417-B8D983A8867F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A3AF93AC-F6CE-4DFC-908E-E9E905064BC0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D241B085-6A98-4CBF-9676-FAA91E36F6C6</key>
 		<array>
 			<dict>
@@ -58,25 +71,6 @@
 	<string>awesome lists</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -107,6 +101,25 @@
 			<string>D241B085-6A98-4CBF-9676-FAA91E36F6C6</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -179,6 +192,19 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>awesome</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>B22AABA1-E682-48A2-A417-B8D983A8867F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -205,16 +231,23 @@
 			<key>ypos</key>
 			<integer>90</integer>
 		</dict>
+		<key>B22AABA1-E682-48A2-A417-B8D983A8867F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>140</integer>
+		</dict>
 		<key>D241B085-6A98-4CBF-9676-FAA91E36F6C6</key>
 		<dict>
 			<key>xpos</key>
 			<integer>10</integer>
 			<key>ypos</key>
-			<integer>60</integer>
+			<integer>20</integer>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/nikitavoloboev</string>
 </dict>

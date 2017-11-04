@@ -3,11 +3,12 @@ package main
 import (
 	"log"
 	"os/exec"
+	"time"
 
 	"github.com/deanishe/awgo"
 	"github.com/deanishe/awgo/update"
+	"github.com/docopt/docopt-go"
 	"github.com/nikitavoloboev/markdown-parser/parser"
-	"github.com/tj/docopt"
 )
 
 // Name of the background job that checks for updates
@@ -27,14 +28,9 @@ Options:
 `
 
 var (
-	// icons
 	iconAvailable = &aw.Icon{Value: "icons/update.png"}
-	redditIcon    = &aw.Icon{Value: "icons/reddit.png"}
-	githubIcon    = &aw.Icon{Value: "icons/github.png"}
-	translateIcon = &aw.Icon{Value: "icons/translate.png"}
-	forumsIcon    = &aw.Icon{Value: "icons/forums.png"}
-	stackIcon     = &aw.Icon{Value: "icons/stack.png"}
-	docIcon       = &aw.Icon{Value: "icons/doc.png"}
+	cacheName     = "awesome-lists.json"
+	maxCacheAge   = 180 * time.Minute
 
 	repo = "nikitavoloboev/alfred-awesome-lists"
 	wf   *aw.Workflow
@@ -88,6 +84,11 @@ func run() {
 				Icon(iconAvailable)
 		}
 	}
+
+	// TODO: add cache
+	// if wf.Cache.Exists(cacheName) {
+	// 	if err := wf.Cache.LoadJSON(cacheName, )
+	// }
 
 	// parse URL for links
 	links, err := parser.ParseMarkdownURL("https://raw.githubusercontent.com/sindresorhus/awesome/master/readme.md")
