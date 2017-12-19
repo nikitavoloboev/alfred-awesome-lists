@@ -22,6 +22,7 @@ func doSearch() error {
 		wf.NewItem(k).Arg(v).Valid(true).UID(k)
 	}
 
+	// TODO: add cache
 	// if err := wf.Session.LoadOrStoreJSON("awesome", getWins, &wins); err != nil {
 	// 	return nil, err
 	// }

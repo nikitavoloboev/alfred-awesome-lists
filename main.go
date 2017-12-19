@@ -27,6 +27,7 @@ var (
 	// Application commands
 	searchCmd *kingpin.CmdClause
 	updateCmd *kingpin.CmdClause
+	testCmd   *kingpin.CmdClause
 
 	// Script options (populated by Kingpin application)
 	query string
@@ -35,7 +36,7 @@ var (
 	wf *aw.Workflow
 )
 
-// Mostly set up kingpin commands
+// Mostly sets up kingpin commands
 func init() {
 	wf = aw.New(update.GitHub("nikitavoloboev/alfred-awesome-lists"), aw.HelpURL("https://github.com/nikitavoloboev/alfred-awesome-lists/issues"))
 
@@ -47,6 +48,9 @@ func init() {
 
 	// Commands using query
 	searchCmd = app.Command("search", "Search Sindre awesome list.").Alias("s")
+
+	// Testing things
+	testCmd = app.Command("test", "Testing things.").Alias("t")
 
 	// Common options
 	// NOTE: not sure if works
@@ -68,17 +72,25 @@ func run() {
 	switch cmd {
 	case searchCmd.FullCommand():
 		err = doSearch()
+	case testCmd.FullCommand():
+		err = doTest()
 	default:
 		err = fmt.Errorf("Uknown command : %s", cmd)
 	}
+
+	// TODO: fix error with update
 	// Check for update
-	if err == nil && cmd != updateCmd.FullCommand() {
-		err = checkForUpdate()
-	}
+	// if err == nil && cmd != updateCmd.FullCommand() {
+	// 	err = checkForUpdate()
+	// }
 
 	if err != nil {
 		wf.FatalError(err)
 	}
+}
+
+func doTest() error {
+	return nil
 }
 
 // main wraps run() (actual entry point) to catch errors
