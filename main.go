@@ -41,7 +41,6 @@ func init() {
 	wf = aw.New(update.GitHub("nikitavoloboev/alfred-awesome-lists"), aw.HelpURL("https://github.com/nikitavoloboev/alfred-awesome-lists/issues"))
 
 	app = kingpin.New("awesome", "Navigate Awesome Lists in Alfred.")
-	app.HelpFlag.Short('h')
 
 	// Update command
 	updateCmd = app.Command("update", "Check for new workflow version.").Alias("u")
@@ -75,10 +74,11 @@ func run() {
 	case testCmd.FullCommand():
 		err = doTest()
 	default:
-		err = fmt.Errorf("Uknown command : %s", cmd)
+		err = fmt.Errorf("Uknown command: %s", cmd)
 	}
 
-	// TODO: fix error with update
+	// TODO: Fix error with update
+
 	// Check for update
 	// if err == nil && cmd != updateCmd.FullCommand() {
 	// 	err = checkForUpdate()

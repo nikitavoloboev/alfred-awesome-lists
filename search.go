@@ -11,18 +11,19 @@ func doSearch() error {
 
 	log.Printf("query=%s", query)
 
-	// parse URL for links
+	// Parse URL for links
 	links, err := parser.ParseMarkdownURL("https://raw.githubusercontent.com/sindresorhus/awesome/master/readme.md")
 	if err != nil {
 		log.Println("Error parsing links")
 	}
 
-	// add all links to Alfred
+	// Add all links to Alfred
 	for k, v := range links {
 		wf.NewItem(k).Arg(v).Valid(true).UID(k)
 	}
 
-	// TODO: add cache
+	// TODO: Add cache
+
 	// if err := wf.Session.LoadOrStoreJSON("awesome", getWins, &wins); err != nil {
 	// 	return nil, err
 	// }

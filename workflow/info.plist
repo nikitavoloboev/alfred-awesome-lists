@@ -48,19 +48,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>triggerid</key>
-				<string>awesome</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>B22AABA1-E682-48A2-A417-B8D983A8867F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -74,6 +61,19 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>awesome</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>B22AABA1-E682-48A2-A417-B8D983A8867F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
