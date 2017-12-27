@@ -3,6 +3,8 @@
 
 <img src="https://i.imgur.com/CDgfOKj.png" width="500" alt="img">
 
+You can also press ⌃ to quickly go to readme of the Awesome list so you can quickly submit PR to it.
+
 ## Installing
 Download the workflow from [GitHub releases](https://github.com/nikitavoloboev/alfred-awesome-lists/releases/latest).
 
