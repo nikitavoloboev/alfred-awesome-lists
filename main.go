@@ -71,18 +71,18 @@ func run() {
 	switch cmd {
 	case searchCmd.FullCommand():
 		err = doSearch()
+	case updateCmd.FullCommand():
+		err = doUpdate()
 	case testCmd.FullCommand():
 		err = doTest()
 	default:
 		err = fmt.Errorf("Uknown command: %s", cmd)
 	}
 
-	// TODO: Fix error with update
-
 	// Check for update
-	// if err == nil && cmd != updateCmd.FullCommand() {
-	// 	err = checkForUpdate()
-	// }
+	if err == nil && cmd != updateCmd.FullCommand() {
+		err = checkForUpdate()
+	}
 
 	if err != nil {
 		wf.FatalError(err)

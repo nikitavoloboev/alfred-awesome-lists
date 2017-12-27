@@ -20,6 +20,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C14883EE-9E77-4120-B375-97E42BD808B6</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Edit awesome list</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>B22AABA1-E682-48A2-A417-B8D983A8867F</key>
 		<array>
@@ -34,9 +44,22 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C14883EE-9E77-4120-B375-97E42BD808B6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C37D87EC-752A-4D60-A7C8-20E488267314</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Nikita Voloboev &lt;nikita.voloboev@icloud.com&gt;</string>
+	<string>Nikita Voloboev</string>
 	<key>description</key>
 	<string>View all awesome lists from Alfred</string>
 	<key>disabled</key>
@@ -124,35 +147,88 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{var:link}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>C37D87EC-752A-4D60-A7C8-20E488267314</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>link</key>
+					<string>{query}/blob/master/README.md</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>C14883EE-9E77-4120-B375-97E42BD808B6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Details on how to effectively use this workflow are found in the GitHub repository attached to this workflow.
+
+Post any issues and feature requests you have there. 💜</string>
 	<key>uidata</key>
 	<dict>
 		<key>09B97908-9A52-4275-855F-41A8C354E5B8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>180</integer>
 			<key>ypos</key>
-			<integer>60</integer>
+			<integer>40</integer>
 		</dict>
 		<key>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>460</integer>
 			<key>ypos</key>
-			<integer>60</integer>
+			<integer>20</integer>
 		</dict>
 		<key>B22AABA1-E682-48A2-A417-B8D983A8867F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>10</integer>
 			<key>ypos</key>
-			<integer>60</integer>
+			<integer>40</integer>
+		</dict>
+		<key>C14883EE-9E77-4120-B375-97E42BD808B6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>380</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
+		<key>C37D87EC-752A-4D60-A7C8-20E488267314</key>
+		<dict>
+			<key>xpos</key>
+			<integer>460</integer>
+			<key>ypos</key>
+			<integer>150</integer>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0.1</string>
+	<string>1.0.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/nikitavoloboev</string>
 </dict>
