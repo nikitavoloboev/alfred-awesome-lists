@@ -5,7 +5,7 @@
 
 You can also press ⌃ to quickly go to readme of the Awesome list so you can quickly submit PR to it.
 
-## Installing
+## Install
 Download the workflow from [GitHub releases](https://github.com/nikitavoloboev/alfred-awesome-lists/releases/latest).
 
 ## Contributing
