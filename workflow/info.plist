@@ -124,7 +124,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>Loading...</string>
 				<key>script</key>
 				<string>./alfred-awesome-lists search -q "$1"</string>
 				<key>scriptargtype</key>

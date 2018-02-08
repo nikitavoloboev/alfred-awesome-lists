@@ -10,7 +10,7 @@ import (
 
 // doUpdate checks for a newer version of the workflow.
 func doUpdate() error {
-	log.Println("checking for update...")
+	log.Println("Checking for update...")
 	return wf.CheckForUpdate()
 }
 

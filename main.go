@@ -32,27 +32,25 @@ var (
 	// Script options (populated by Kingpin application)
 	query string
 
+	repo = "nikitavoloboev/alfred-awesome-lists"
+
 	// Workflow stuff
 	wf *aw.Workflow
 )
 
 // Mostly sets up kingpin commands
 func init() {
-	wf = aw.New(update.GitHub("nikitavoloboev/alfred-awesome-lists"), aw.HelpURL("https://github.com/nikitavoloboev/alfred-awesome-lists/issues"))
+	wf = aw.New(update.GitHub(repo), aw.HelpURL(repo+"/issues"))
 
-	app = kingpin.New("awesome", "Navigate Awesome Lists in Alfred.")
+	app = kingpin.New("awesome", "Navigate awesome lists.")
 
 	// Update command
 	updateCmd = app.Command("update", "Check for new workflow version.").Alias("u")
 
 	// Commands using query
-	searchCmd = app.Command("search", "Search Sindre awesome list.").Alias("s")
-
-	// Testing things
-	testCmd = app.Command("test", "Testing things.").Alias("t")
+	searchCmd = app.Command("search", "Search main awesome list.").Alias("s")
 
 	// Common options
-	// NOTE: not sure if works
 	for _, cmd := range []*kingpin.CmdClause{
 		searchCmd,
 	} {
@@ -73,8 +71,6 @@ func run() {
 		err = doSearch()
 	case updateCmd.FullCommand():
 		err = doUpdate()
-	case testCmd.FullCommand():
-		err = doTest()
 	default:
 		err = fmt.Errorf("Uknown command: %s", cmd)
 	}
@@ -87,10 +83,6 @@ func run() {
 	if err != nil {
 		wf.FatalError(err)
 	}
-}
-
-func doTest() error {
-	return nil
 }
 
 // main wraps run() (actual entry point) to catch errors
