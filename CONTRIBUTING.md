@@ -1,8 +1,8 @@
-# Contributing
-Thank you for wanting to make Alfred Awesome Lists better. You can:
+# Contributing to Alfred Awesome Lists
+There are many ways you can contribute. You can:
 - Make suggestions and file bugs in [Issues](../../issues/).
 - Fix issues and add features with [Pull Requests](../../pulls/).
-- Improve and extend [the awesome lists](https://github.com/sindresorhus/awesome) and add more awesome links and resources.
+- Improve and extend the [awesome lists](https://github.com/sindresorhus/awesome#readme) and add more awesome links and resources.
 
 ## Dependencies
 The workflow is written in [Go language](https://golang.org/) and uses [AwGo](https://github.com/deanishe/awgo) library for all the Alfred related things.

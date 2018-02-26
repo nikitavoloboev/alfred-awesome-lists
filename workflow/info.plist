@@ -259,8 +259,6 @@ Post any issues and feature requests you have there. 💜</string>
 		</dict>
 		<key>C14883EE-9E77-4120-B375-97E42BD808B6</key>
 		<dict>
-			<key>note</key>
-			<string>Edit Awesome list</string>
 			<key>xpos</key>
 			<integer>540</integer>
 			<key>ypos</key>
@@ -268,6 +266,8 @@ Post any issues and feature requests you have there. 💜</string>
 		</dict>
 		<key>C37D87EC-752A-4D60-A7C8-20E488267314</key>
 		<dict>
+			<key>note</key>
+			<string>Edit Awesome list</string>
 			<key>xpos</key>
 			<integer>640</integer>
 			<key>ypos</key>
@@ -275,7 +275,7 @@ Post any issues and feature requests you have there. 💜</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0.3</string>
+	<string>1.0.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/nikitavoloboev</string>
 </dict>
