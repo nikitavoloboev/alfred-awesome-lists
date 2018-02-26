@@ -19,7 +19,7 @@ func doSearch() error {
 
 	// Add all links to Alfred
 	for k, v := range links {
-		wf.NewItem(k).Arg(v).Valid(true).UID(k)
+		wf.NewItem(k).Arg(v + "#readme").Valid(true).UID(k)
 	}
 
 	// TODO: Add cache

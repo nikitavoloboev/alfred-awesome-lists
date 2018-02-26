@@ -22,11 +22,24 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>C14883EE-9E77-4120-B375-97E42BD808B6</string>
+				<string>7BED6B3C-632D-4E17-B07C-6411AC259F94</string>
 				<key>modifiers</key>
 				<integer>262144</integer>
 				<key>modifiersubtext</key>
 				<string>Edit awesome list</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7BED6B3C-632D-4E17-B07C-6411AC259F94</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C14883EE-9E77-4120-B375-97E42BD808B6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -169,12 +182,37 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$1
+
+echo -n "${query//#readme}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7BED6B3C-632D-4E17-B07C-6411AC259F94</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>variables</key>
 				<dict>
 					<key>link</key>
-					<string>{query}/blob/master/README.md</string>
+					<string>{query}/edit/master/README.md</string>
 				</dict>
 			</dict>
 			<key>type</key>
@@ -196,35 +234,44 @@ Post any issues and feature requests you have there. 💜</string>
 			<key>xpos</key>
 			<integer>180</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>130</integer>
 		</dict>
 		<key>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>460</integer>
+			<integer>380</integer>
 			<key>ypos</key>
-			<integer>20</integer>
+			<integer>70</integer>
 		</dict>
-		<key>B22AABA1-E682-48A2-A417-B8D983A8867F</key>
-		<dict>
-			<key>xpos</key>
-			<integer>10</integer>
-			<key>ypos</key>
-			<integer>40</integer>
-		</dict>
-		<key>C14883EE-9E77-4120-B375-97E42BD808B6</key>
+		<key>7BED6B3C-632D-4E17-B07C-6411AC259F94</key>
 		<dict>
 			<key>xpos</key>
 			<integer>380</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>210</integer>
+		</dict>
+		<key>B22AABA1-E682-48A2-A417-B8D983A8867F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>130</integer>
+		</dict>
+		<key>C14883EE-9E77-4120-B375-97E42BD808B6</key>
+		<dict>
+			<key>note</key>
+			<string>Edit Awesome list</string>
+			<key>xpos</key>
+			<integer>540</integer>
+			<key>ypos</key>
+			<integer>240</integer>
 		</dict>
 		<key>C37D87EC-752A-4D60-A7C8-20E488267314</key>
 		<dict>
 			<key>xpos</key>
-			<integer>460</integer>
+			<integer>640</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>210</integer>
 		</dict>
 	</dict>
 	<key>version</key>
