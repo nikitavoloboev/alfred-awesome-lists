@@ -22,11 +22,34 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>37F1E515-5CF8-4276-8A8A-305D169D7BC9</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>7BED6B3C-632D-4E17-B07C-6411AC259F94</string>
 				<key>modifiers</key>
 				<integer>262144</integer>
 				<key>modifiersubtext</key>
-				<string>Edit awesome list</string>
+				<string>Edit list</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>37F1E515-5CF8-4276-8A8A-305D169D7BC9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C4DD0986-C311-4550-9E12-F754F61F30BA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -70,6 +93,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C4DD0986-C311-4550-9E12-F754F61F30BA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>633B3C4A-0415-4EA4-A080-FF110E6CA2D9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Nikita Voloboev</string>
@@ -99,6 +135,31 @@
 			<string>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$1
+
+echo -n "${query//#readme}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>37F1E515-5CF8-4276-8A8A-305D169D7BC9</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -175,6 +236,43 @@
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
+			<string>633B3C4A-0415-4EA4-A080-FF110E6CA2D9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>link</key>
+					<string>{query}/blob/master/CONTRIBUTING.md#readme</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>C4DD0986-C311-4550-9E12-F754F61F30BA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{var:link}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
 			<string>C37D87EC-752A-4D60-A7C8-20E488267314</string>
 			<key>version</key>
 			<integer>1</integer>
@@ -232,37 +330,53 @@ Post any issues and feature requests you have there. 💜</string>
 		<key>09B97908-9A52-4275-855F-41A8C354E5B8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>180</integer>
+			<integer>160</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>150</integer>
 		</dict>
 		<key>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</key>
 		<dict>
 			<key>xpos</key>
 			<integer>380</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>10</integer>
+		</dict>
+		<key>37F1E515-5CF8-4276-8A8A-305D169D7BC9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>380</integer>
+			<key>ypos</key>
+			<integer>150</integer>
+		</dict>
+		<key>633B3C4A-0415-4EA4-A080-FF110E6CA2D9</key>
+		<dict>
+			<key>note</key>
+			<string>View contribution guidelines</string>
+			<key>xpos</key>
+			<integer>640</integer>
+			<key>ypos</key>
+			<integer>150</integer>
 		</dict>
 		<key>7BED6B3C-632D-4E17-B07C-6411AC259F94</key>
 		<dict>
 			<key>xpos</key>
 			<integer>380</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>310</integer>
 		</dict>
 		<key>B22AABA1-E682-48A2-A417-B8D983A8867F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>10</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>150</integer>
 		</dict>
 		<key>C14883EE-9E77-4120-B375-97E42BD808B6</key>
 		<dict>
 			<key>xpos</key>
 			<integer>540</integer>
 			<key>ypos</key>
-			<integer>240</integer>
+			<integer>340</integer>
 		</dict>
 		<key>C37D87EC-752A-4D60-A7C8-20E488267314</key>
 		<dict>
@@ -271,11 +385,18 @@ Post any issues and feature requests you have there. 💜</string>
 			<key>xpos</key>
 			<integer>640</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>310</integer>
+		</dict>
+		<key>C4DD0986-C311-4550-9E12-F754F61F30BA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>560</integer>
+			<key>ypos</key>
+			<integer>180</integer>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0.4</string>
+	<string>1.0.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/nikitavoloboev</string>
 </dict>
