@@ -139,44 +139,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>query=$1
-
-echo -n "${query//#readme}"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>37F1E515-5CF8-4276-8A8A-305D169D7BC9</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>awesome</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>B22AABA1-E682-48A2-A417-B8D983A8867F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -200,7 +162,7 @@ echo -n "${query//#readme}"</string>
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
-				<string>./alfred-awesome-lists search -q "$1"</string>
+				<string>./alfred-awesome-lists "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -218,6 +180,44 @@ echo -n "${query//#readme}"</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>09B97908-9A52-4275-855F-41A8C354E5B8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>awesome</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>B22AABA1-E682-48A2-A417-B8D983A8867F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$1
+
+echo -n "${query//#readme}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>37F1E515-5CF8-4276-8A8A-305D169D7BC9</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -322,7 +322,9 @@ echo -n "${query//#readme}"</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Details on how to effectively use this workflow are found in the GitHub repository attached to this workflow.
+	<string>Details on how to use this workflow are found in the GitHub repo attached to the workflow. 
+
+Double click this workflow in sidebar -&gt; Open website.
 
 Post any issues and feature requests you have there. 💜</string>
 	<key>uidata</key>
@@ -398,6 +400,6 @@ Post any issues and feature requests you have there. 💜</string>
 	<key>version</key>
 	<string>1.0.5</string>
 	<key>webaddress</key>
-	<string>https://github.com/nikitavoloboev</string>
+	<string>https://github.com/nikitavoloboev/alfred-awesome-lists#readme</string>
 </dict>
 </plist>
