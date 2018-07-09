@@ -110,7 +110,7 @@
 	<key>createdby</key>
 	<string>Nikita Voloboev</string>
 	<key>description</key>
-	<string>Browse awesome lists</string>
+	<string>Search awesome lists</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -261,25 +261,6 @@ echo -n "${query//#readme}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{var:link}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>633B3C4A-0415-4EA4-A080-FF110E6CA2D9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -301,6 +282,25 @@ echo -n "${query//#readme}"</string>
 			<string>37F1E515-5CF8-4276-8A8A-305D169D7BC9</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{var:link}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>633B3C4A-0415-4EA4-A080-FF110E6CA2D9</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -336,21 +336,21 @@ Post any issues and feature requests you have there. 💜</string>
 			<key>xpos</key>
 			<integer>160</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>160</integer>
 		</dict>
 		<key>185DBDA9-7F2E-40C9-A8C6-C84B737806CF</key>
 		<dict>
 			<key>xpos</key>
 			<integer>380</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>30</integer>
 		</dict>
 		<key>37F1E515-5CF8-4276-8A8A-305D169D7BC9</key>
 		<dict>
 			<key>xpos</key>
 			<integer>380</integer>
 			<key>ypos</key>
-			<integer>290</integer>
+			<integer>300</integer>
 		</dict>
 		<key>633B3C4A-0415-4EA4-A080-FF110E6CA2D9</key>
 		<dict>
@@ -359,28 +359,28 @@ Post any issues and feature requests you have there. 💜</string>
 			<key>xpos</key>
 			<integer>640</integer>
 			<key>ypos</key>
-			<integer>290</integer>
+			<integer>300</integer>
 		</dict>
 		<key>7BED6B3C-632D-4E17-B07C-6411AC259F94</key>
 		<dict>
 			<key>xpos</key>
 			<integer>380</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>160</integer>
 		</dict>
 		<key>B22AABA1-E682-48A2-A417-B8D983A8867F</key>
 		<dict>
 			<key>xpos</key>
 			<integer>10</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>160</integer>
 		</dict>
 		<key>C14883EE-9E77-4120-B375-97E42BD808B6</key>
 		<dict>
 			<key>xpos</key>
 			<integer>550</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>190</integer>
 		</dict>
 		<key>C37D87EC-752A-4D60-A7C8-20E488267314</key>
 		<dict>
@@ -389,14 +389,14 @@ Post any issues and feature requests you have there. 💜</string>
 			<key>xpos</key>
 			<integer>640</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>160</integer>
 		</dict>
 		<key>C4DD0986-C311-4550-9E12-F754F61F30BA</key>
 		<dict>
 			<key>xpos</key>
 			<integer>550</integer>
 			<key>ypos</key>
-			<integer>320</integer>
+			<integer>330</integer>
 		</dict>
 	</dict>
 	<key>version</key>
