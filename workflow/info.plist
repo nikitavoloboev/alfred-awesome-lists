@@ -110,7 +110,7 @@
 	<key>createdby</key>
 	<string>Nikita Voloboev</string>
 	<key>description</key>
-	<string>View all awesome lists from Alfred</string>
+	<string>Browse awesome lists</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -154,6 +154,44 @@
 			<string>C37D87EC-752A-4D60-A7C8-20E488267314</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>awesome</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>B22AABA1-E682-48A2-A417-B8D983A8867F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$1
+
+echo -n "${query//#readme}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7BED6B3C-632D-4E17-B07C-6411AC259F94</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -205,44 +243,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>triggerid</key>
-				<string>awesome</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>B22AABA1-E682-48A2-A417-B8D983A8867F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>query=$1
-
-echo -n "${query//#readme}"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>7BED6B3C-632D-4E17-B07C-6411AC259F94</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>variables</key>
@@ -255,6 +255,25 @@ echo -n "${query//#readme}"</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>C14883EE-9E77-4120-B375-97E42BD808B6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{var:link}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>633B3C4A-0415-4EA4-A080-FF110E6CA2D9</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -282,25 +301,6 @@ echo -n "${query//#readme}"</string>
 			<string>37F1E515-5CF8-4276-8A8A-305D169D7BC9</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{var:link}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>633B3C4A-0415-4EA4-A080-FF110E6CA2D9</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -400,7 +400,7 @@ Post any issues and feature requests you have there. 💜</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0.5</string>
+	<string>1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/nikitavoloboev/alfred-awesome-lists#readme</string>
 </dict>
