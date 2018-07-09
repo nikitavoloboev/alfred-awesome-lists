@@ -2,41 +2,37 @@ package main
 
 import (
 	"log"
-	"os"
 
 	"github.com/nikitavoloboev/markdown-parser"
 )
 
-func searchAwesomeLists() error {
+// List holds an awesome list.
+type List struct {
+	UID  string
+	Name string
+	URL  string
+}
+
+func searchAwesomeLists() (map[string]List, error) {
 	showUpdateStatus()
 
 	log.Printf("query=%s", query)
 
 	// Get the list from GitHub
-	links, err := parser.ParseMarkdownURL("https://raw.githubusercontent.com/sindresorhus/awesome/master/readme.md")
+	urls, err := parser.ParseMarkdownURL("https://raw.githubusercontent.com/sindresorhus/awesome/master/readme.md")
 	if err != nil {
 		log.Println("Error parsing links")
 	}
 
-	// Add all links to Alfred
-	for k, v := range links {
-		wf.NewItem(k).Arg(v + "#readme").Valid(true).UID(k)
+	links := make(map[string]List)
+
+	for name, url := range urls {
+		links[url] = List{
+			UID:  name,
+			Name: name,
+			URL:  url,
+		}
 	}
 
-	// TODO: add cache
-
-	// if err := wf.Session.LoadOrStoreJSON("awesome", getWins, &wins); err != nil {
-	// 	return nil, err
-	// }
-
-	query = os.Args[1]
-
-	if query != "" {
-		wf.Filter(query)
-	}
-
-	wf.WarnEmpty("No matching items", "Try a different query?")
-	wf.SendFeedback()
-
-	return nil
+	return links, nil
 }
