@@ -1,7 +1,7 @@
 # Alfred Awesome Lists [![Workflows](https://img.shields.io/badge/More%20Workflows-🎩-purple.svg)](https://github.com/learn-anything/alfred-workflows#readme) [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
 > [Alfred](https://www.alfredapp.com/) workflow to search [awesome lists](https://github.com/sindresorhus/awesome#readme)
 
-<img src="https://i.imgur.com/MtpC2WS.png" width="500" alt="img">
+<img src="https://i.imgur.com/daBpE2F.png" width="500" alt="img">
 
 ## Install
 Download the workflow from [GitHub releases](../../releases/latest).
