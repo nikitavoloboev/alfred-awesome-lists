@@ -11,8 +11,7 @@ import (
 
 var (
 	// Icons
-	iconDefault = &aw.Icon{Value: "icon.png"}
-	iconUpdate  = &aw.Icon{Value: "icons/update-available.png"}
+	iconUpdate = &aw.Icon{Value: "icons/update-available.png"}
 
 	query string
 
