@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>nikivi.awesome-lists</string>
+	<string>nikivi.awesome.lists</string>
 	<key>category</key>
 	<string>Mine</string>
 	<key>connections</key>
@@ -159,7 +159,7 @@
 			<key>config</key>
 			<dict>
 				<key>triggerid</key>
-				<string>awesome</string>
+				<string>search lists</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.external</string>
@@ -178,7 +178,7 @@
 				<key>script</key>
 				<string>query=$1
 
-echo -n $query</string>
+echo -n "${query//#readme}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -332,7 +332,7 @@ Post any issues and feature requests you have there. 💜</string>
 		<key>09B97908-9A52-4275-855F-41A8C354E5B8</key>
 		<dict>
 			<key>note</key>
-			<string>Search Awesome Lists</string>
+			<string>Seach Awesome Lists</string>
 			<key>xpos</key>
 			<integer>160</integer>
 			<key>ypos</key>
@@ -400,7 +400,7 @@ Post any issues and feature requests you have there. 💜</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/nikitavoloboev/alfred-awesome-lists#readme</string>
 </dict>
