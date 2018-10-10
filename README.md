@@ -2,7 +2,7 @@
 
 > [Alfred](https://www.alfredapp.com/) workflow to search [awesome lists](https://github.com/sindresorhus/awesome#readme)
 
-<img src="https://i.imgur.com/fNgm5cv.png" width="500" alt="img">
+<img src="https://i.imgur.com/6SGg4VJ.png" width="500" alt="img">
 
 ## Install
 
