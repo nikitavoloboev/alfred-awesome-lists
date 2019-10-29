@@ -1,4 +1,4 @@
-# Contributing to Alfred Learn Anything
+# Contributing to Alfred Awesome Lists
 
 Thank you for taking the time to contribute! ♥️
 
