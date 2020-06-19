@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/deanishe/awgo"
+	aw "github.com/deanishe/awgo"
 	"github.com/deanishe/awgo/update"
 )
 
