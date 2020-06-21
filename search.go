@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/nikitavoloboev/markdown-parser"
+	parser "github.com/nikitavoloboev/markdown-parser"
 )
 
 // List holds an awesome list.
@@ -19,7 +19,7 @@ func searchAwesomeLists() (map[string]List, error) {
 	log.Printf("query=%s", query)
 
 	// Get the list from GitHub
-	urls, err := parser.ParseMarkdownURL("https://raw.githubusercontent.com/sindresorhus/awesome/master/readme.md")
+	urls, err := parser.ParseMarkdownURL("https://raw.githubusercontent.com/sindresorhus/awesome/main/readme.md")
 	if err != nil {
 		log.Println("Error parsing links")
 	}
