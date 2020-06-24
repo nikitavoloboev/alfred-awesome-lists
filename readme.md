@@ -1,6 +1,6 @@
 # Alfred Awesome Lists [![Workflows](https://img.shields.io/badge/-more%20workflows-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://github.com/learn-anything/alfred-workflows) [![Thanks](http://bit.ly/saythankss)](https://github.com/sponsors/nikitavoloboev)
 
-> [Alfred](https://www.alfredapp.com/) workflow to search [awesome lists](https://github.com/sindresorhus/awesome#readme)
+> [Alfred](https://www.alfredapp.com/) workflow to search [awesome lists](https://github.com/sindresorhus/awesome)
 
 <img src="https://i.imgur.com/KoTlEXe.png" width="500" alt="img">
 

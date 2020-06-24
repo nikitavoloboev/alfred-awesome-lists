@@ -191,7 +191,7 @@
 				<key>script</key>
 				<string>query=$1
 
-echo -n "${query//#readme}"</string>
+echo -n "${query//}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -326,7 +326,7 @@ echo -n "${query//#readme}"</string>
 				<key>script</key>
 				<string>query=$1
 
-echo -n "${query//#readme}"</string>
+echo -n "${query//}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -349,7 +349,7 @@ echo -n "${query//#readme}"</string>
 				<key>variables</key>
 				<dict>
 					<key>link</key>
-					<string>{query}/blob/master/CONTRIBUTING.md#readme</string>
+					<string>{query}/blob/master/CONTRIBUTING.md</string>
 				</dict>
 			</dict>
 			<key>type</key>
