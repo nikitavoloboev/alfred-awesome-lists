@@ -11,8 +11,6 @@ The workflow is written in [Go](https://golang.org/) and uses [AwGo](https://git
 
 It uses [modd](https://github.com/cortesi/modd) and [Alfred command](https://godoc.org/github.com/jason0x43/go-alfred/alfred) to ease its development.
 
-To run the project:
-
 1. Clone repo
 2. Run `alfred link` (makes symbolic link of [`workflow`](workflow) directory)
 3. Run `modd` (starts a process that automatically builds the workflow with `alfred build` on any changes you make to `.go` files, this builds and places a binary inside [`workflow`](workflow) directory.)
